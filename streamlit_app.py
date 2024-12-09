@@ -3,7 +3,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 # Load data
-data = pd.read_csv('/home/icctv/Desktop/train.csv')
+data = pd.read_csv('train.csv')
 
 # Convert 'Order Date' to datetime with the correct format before filtering
 data['Order Date'] = pd.to_datetime(data['Order Date'], format='%d/%m/%Y') # Use the correct format '%d/%m/%Y'
